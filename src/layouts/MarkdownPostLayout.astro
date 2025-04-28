@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
     marker:text-c_mauve prose-code:font-gohu
     "
         >
-            <a href="../../" class="flex w-max text-c_mauve decoration-dotted hover:underline hover:cursor-pointer mb-4">« Back<br/><br/></a>
+            <a tabindex="0" href="../../" class="flex w-max text-c_mauve decoration-dotted hover:underline hover:cursor-pointer mb-4">« Back<br/><br/></a>
             <h1 class="font-bold text-xl">{frontmatter.title}</h1>
             <article class="">
                 <slot />
