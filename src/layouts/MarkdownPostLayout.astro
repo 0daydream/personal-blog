@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GlobalLogo from '../components/GlobalLogo.astro';
+const { frontmatter } = Astro.props;
+---
+
+<Layout>
+    <GlobalLogo/>
+    <div class="mb-32">
+        <div class="p-4 flex flex-col m-auto max-w-[700px] font-gohu leading-none
+    prose-p:mb-4 prose-headings:my-1 prose-headings:font-bold prose-headings:text-[#cba6f7] prose-ol:list-decimal prose-ol:list-inside
+    prose-ol:mb-4 prose-ul:ml-4 prose-ul:list-disc prose-ul:mb-4 prose-ul:flex-col prose-hr:mt-8 prose-hr:mb-6 prose-hr:border-[#313244]
+    prose-a:text-[#cba6f7] prose-a:decoration-dotted hover:prose-a:underline prose-pre:my-4 prose-pre:py-4 prose-pre:px-4
+    marker:text-[#cba6f7] prose-code:font-gohu
+    "
+        >
+            <a href="../../" class="flex w-max text-[#cba6f7] decoration-dotted hover:underline hover:cursor-pointer mb-4">« Back<br/><br/></a>
+            <h1 class="font-bold text-xl">{frontmatter.title}</h1>
+            <article class="">
+                <slot />
+            </article>
+            <p>~{frontmatter.author}</p>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .custom-dash-marker::marker {
+        content: "-";
+    }
+</style>
