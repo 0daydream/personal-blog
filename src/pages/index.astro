@@ -19,7 +19,7 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 			<ul class="w-full">
 				{allPosts.map((post: any) =>
 					<li class="flex w-full items-center">
-						<a class="text-c_mauve decoration-dotted hover:underline hover:cursor-pointer overflow-hidden text-nowrap" href={post.url}>
+						<a tabindex="0" class="text-c_mauve decoration-dotted hover:underline hover:cursor-pointer overflow-hidden text-nowrap" href={post.url}>
 							{post.frontmatter.title}
 						</a>
 						<span class="dots overflow-hidden text-nowrap flex-grow"></span>
