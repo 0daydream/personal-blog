@@ -14,12 +14,12 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 <Layout>
 	<div class="text-center font-unifont">
 		<GlobalLogo/>
-		<div class="flex flex-col max-w-[32rem] m-auto items-center border-4 border-double p-2 mb-12 border-[#cdd6f4]">
+		<div class="flex flex-col max-w-[32rem] m-auto items-center border-4 border-double p-2 mb-12 border-c_text">
 			<h5 class="flex justify-between">Latest Posts:</h5>
 			<ul class="w-full">
 				{allPosts.map((post: any) =>
 					<li class="flex w-full items-center">
-						<a class="text-[#cba6f7] decoration-dotted hover:underline hover:cursor-pointer overflow-hidden text-nowrap" href={post.url}>
+						<a class="text-c_mauve decoration-dotted hover:underline hover:cursor-pointer overflow-hidden text-nowrap" href={post.url}>
 							{post.frontmatter.title}
 						</a>
 						<span class="dots overflow-hidden text-nowrap flex-grow"></span>
