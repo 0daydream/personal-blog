@@ -8,10 +8,10 @@ export default {
 				gohu: ['Gohu', 'sans-serif'], // Use Unifont as the default sans font
 			},
 			colors: {
-				'c_mauve': '#f5c2e7',
-				'c_crust': '#11111b',
-				'c_text': '#cdd6f4',
-				'c_surface0': '#313244',
+				'c_mauve': '#c4a7e7',
+				'c_crust': '#191724',
+				'c_text': '#e0def4',
+				'c_surface0': '#1f1d2e',
 			},
 
 		},

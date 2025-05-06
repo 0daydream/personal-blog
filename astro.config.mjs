@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: "https://japanware.dev",
+  site: "https://vxdev.xyz",
   markdown: {
     shikiConfig: {
       theme: 'catppuccin-mocha',
